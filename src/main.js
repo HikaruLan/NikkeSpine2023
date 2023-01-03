@@ -2,7 +2,7 @@ var load = function (
 	currentSkeleton = 'c010',
 	currentPosture = 'stand',
 	currentAnimation = 'idle',
-	cdn = 'https://cdn.jsdelivr.net/gh/HikaruLan/NikkeSpine/'
+	cdn = 'https://cdn.jsdelivr.net/gh/HikaruLan/NikkeSpine2023/'
 ) {
 	var isMobile;
 	var lastFrameTime = Date.now() / 1000;
@@ -117,10 +117,10 @@ var load = function (
 			input.remove();
 		})
 		$('#share').on('mouseenter', function () {
-			showMessage('点击左上分享按钮，即可将当前角色及动作分享给他人', 4000);
+			showMessage('點擊左上分享按鈕，即可將當前角色及動作分享給他人', 4000);
 		})
 		$('#share').on('click', function () {
-			showMessage('链接已复制至剪贴板', 1000);
+			showMessage('鏈接已複製至剪貼板', 1000);
 		})
 
 		// set scale method
@@ -188,7 +188,7 @@ var load = function (
 	}
 	var init = function () {
 		isMobile = checkMobile();
-		showMessage('滚动滚轮以缩放，点击画面开始拖动', 4000);
+		showMessage('滾動滾輪以縮放，點擊畫面開始拖動', 4000);
 		// Setup canvas and WebGL context. We pass alpha: false to canvas.getContext() so we don't use premultiplied alpha when
 		// loading textures. That is handled separately by PolygonBatcher.
 		canvas = document.getElementById('canvas');
